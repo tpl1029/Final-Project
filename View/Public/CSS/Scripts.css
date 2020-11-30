@@ -110,6 +110,10 @@
         
     }
 
+    .project-grid>a{
+        color: black;
+    }
+
     .project-header{
         grid-column: 1;
         grid-row: 1;

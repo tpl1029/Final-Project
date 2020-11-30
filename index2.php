@@ -26,7 +26,7 @@
     <a href="" class='example2-grid'>
     <div>
             <img src='./View/Public/Images/fff.PNG' class="examples-image">
-            <p> <span class = "examples-title">Fortisure Food Front</span></p>
+            <p class = "examples-title">Fortisure Food Front</p>
             <p class = "examples-description">A Mid-West Grocery Store Chain. </p>
             </button>
     </div>
