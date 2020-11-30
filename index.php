@@ -30,7 +30,7 @@
         <p> Boring placeholder content</p>
         <p> Boring placeholder content</p>
         <p> Boring placeholder content</p>
-        <p> Boring placeholder content</p>
+        <p>Check out <a href="./index2.php"> my projects! </a></p>
 
 
     </div>

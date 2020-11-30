@@ -1,6 +1,6 @@
 <div class="footer">
                 
-                <button class="btn btn-success">Contact Me!</button> 
+                <a href="mailto:tpl1029@gmail.com" class="btn btn-success">Contact Me!</a> 
             </div>
     </div>
 
