@@ -4,6 +4,12 @@
 
 ?>
 
+<script>
+    window.onload= function(){
+        projectsButton();
+    }
+</script>
+
 <div class = "main-page">
 
 

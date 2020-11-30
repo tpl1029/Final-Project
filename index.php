@@ -3,7 +3,13 @@
     include './View/header.php'
 
 ?>
-  
+
+<script>
+    window.onload= function(){
+        homeButton();
+    }
+</script>
+
 <div class = "main-page">
 
 
@@ -31,9 +37,13 @@
 
     <div class="main-image">
     <img src = "./View/Public/Images/milk.jpg" >
-
     </div>
+
 </div>
+
+
+
+
 
 <?php
 

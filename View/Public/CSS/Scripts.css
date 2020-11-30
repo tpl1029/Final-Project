@@ -11,7 +11,7 @@
         grid-column: 1;
         grid-row: 1;
         display: grid;
-        grid-template-columns: auto 100px 100px;
+        grid-template-columns: auto 100px 100px 100px;
         grid-template-rows: auto;
         border-bottom: 1px solid gray ;
     }
@@ -32,12 +32,25 @@
         grid-column: 2;
         grid-row: 1;
         margin-top: auto;
+        
+    }
+
+    .home-text {
+        color: black;
+        border-top: 1px solid gray ;
     }
 
     .projects{
         grid-column: 3;
         grid-row: 1;
-        margin-top: auto;
+        margin-top: auto;        
+        text-align: center;
+    }
+
+    .projects>a {
+        color: black;
+        border-top: 1px solid gray ;
+        
     }
 
     .footer{
@@ -46,6 +59,16 @@
         border-top: 1px solid gray ;
     }
 
+    .footer>button{
+        margin-left: 950px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .nav-buttons{
+        border-top: 1px solid blue ;
+        color: blue;
+    }
 /* General Code */
 
 /* Main Page */
