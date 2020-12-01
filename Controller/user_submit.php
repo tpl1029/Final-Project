@@ -55,8 +55,7 @@ if(isset($_POST['submit'])){
 
 else{
     echo
-    "
-    <p>There was a problem</p>";
+    "<p>There was a problem</p>";
 }
 
 
