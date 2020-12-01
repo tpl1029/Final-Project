@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
         $password = trim(htmlentities($POST["password"]));
 
         $userData = [
-            "username" => $username
+            "username" => $username,
             "password" => $password
           ];
 

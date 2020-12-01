@@ -8,6 +8,7 @@
         {
             // variables
             $userName = $data["username"];
+            $password = $data ["password"];
 
             // Prepare a select statement
             $query = "SELECT username FROM users WHERE username = '$userName'";
@@ -23,7 +24,7 @@
             
             else
             { 
-                $query = "INSERT INTO users (username) VALUES ('$userName')";
+                $query = "INSERT INTO users (username, password) VALUES ('$userName', '$password')";
     
                 $results = $this->conn->prepare($query);
                 
