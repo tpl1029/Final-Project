@@ -1,7 +1,7 @@
 <?php
 
 //check to see if the customer creation from was just submitted
-if (isset($_POST['submit'])) {
+if (isset($_POST['Submit'])) {
     require './Model/query-customer.php';
 
   // Used to remove special encoded characters

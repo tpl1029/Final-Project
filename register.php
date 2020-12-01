@@ -33,7 +33,7 @@
                     <span class="help-block"><?php echo $confirm_password_err; ?></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">
                     <input type="reset" class="btn btn-default" value="Reset">
                 </div>
                 <p>Already have an account? <a href="login.php">Login here</a>.</p>
@@ -42,8 +42,8 @@
 
     </div>
 <?php
-
-    include './View/footer.php'
+    
+    include './View/footer.php';
 
 ?>
 

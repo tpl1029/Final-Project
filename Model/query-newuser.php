@@ -4,32 +4,36 @@
             $this->conn = $db;
         }
 
-        public function checkUser($data){
+        public function checkUser($data)
+        {
             // variables
-                $userName = $data['username'];
+            $userName = $data["username"];
 
-        // Prepare a select statement
-        $query = "SELECT id FROM users WHERE username = $userName";
+            // Prepare a select statement
+            $query = "SELECT username FROM users WHERE username = '$userName'";
+            
+            $results = $this->conn->prepare($query);
+            
+            $results->execute();       
         
-        $results = $this->conn->prepare($query);
-        
-        $results->execute();
-        
-        return $this->conn->lastInsertId();
+                       
+            if($results->rowCount() >= 1){
+                return false;
+            } 
+            
+            else
+            { 
+                $query = "INSERT INTO users (username) VALUES ('$userName')";
+    
+                $results = $this->conn->prepare($query);
                 
-                if(mysqli_stmt_num_rows($results) == 1){
-                    $username_err = "This username is already taken.";
-                } else{
-                    $username = trim($_POST["username"]);
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                $results->execute();
+                
+                return true;
+                
             }
 
-            // Close statement
-            mysqli_stmt_close($results);
         }
+
     }
-    
-    
 ?>
