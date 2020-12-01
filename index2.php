@@ -18,7 +18,7 @@
     <div >
             <img src='./View/Public/Images/reeses_pieces.png' class="examples-image">
             <p class = "examples-title">Karb Kings</p>
-            <p class = "examples-description">A Cleveland Based Candy Store. </p>
+            <p class = "examples-description">A Ficticious Cleveland Based Candy Store. </p>
             </button>
     </div>
     </a>
@@ -27,7 +27,7 @@
     <div>
             <img src='./View/Public/Images/fff.PNG' class="examples-image">
             <p class = "examples-title">Fortisure Food Front</p>
-            <p class = "examples-description">A Mid-West Grocery Store Chain. </p>
+            <p class = "examples-description">A Ficticious Mid-West Grocery Store Chain. </p>
             </button>
     </div>
     </a>
