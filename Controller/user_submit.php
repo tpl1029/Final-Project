@@ -45,9 +45,7 @@ if(isset($_POST['submit'])){
         else
         {
             $username_err = "This username is already taken.";
-        }
-
-        
+        }      
         
         
     }
