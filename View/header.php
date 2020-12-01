@@ -36,11 +36,18 @@
                 </div>
 
                 <div class = "home">
-                    <a href="./index.php"  > <span class="home-text">Home </span></a>
+                    <a href="./index.php"> <span class="home-text">Home </span></a>
                 </div>
 
                 <div class = "projects">
-                    <a href="./index2.php"  > <span class="projects-text">My Projects </span></a>
-                </div>                 
+                    <a href="./index2.php"> <span class="projects-text">My Projects </span></a>
+                </div>
+
+                <div class = "login">
+                    <a href="./login.php"> <span class="login-text">Login</span></a>
+                </div>  
+
             </div>
+
+
             

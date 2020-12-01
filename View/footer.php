@@ -23,3 +23,12 @@
     }
 
 </script>
+
+<script>
+
+    function loginButton() {    
+     var temp =$(".login-text");
+     temp.addClass("nav-buttons");    
+    }
+
+</script>
