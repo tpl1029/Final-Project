@@ -16,7 +16,7 @@
 
     <p class="project-github"> Check me out on Github! Or browse some of my projects below.</p>
 
-    <a href="" class='example1-grid'>
+    <a href="./Projects/FIT-Web-Exercises-Week-01-/index.html" class='example1-grid'>
     <div >
             <img src='./View/Public/Images/reeses_pieces.png' class="examples-image">
             <p class = "examples-title">Karb Kings</p>
@@ -25,7 +25,7 @@
     </div>
     </a>
 
-    <a href="" class='example2-grid'>
+    <a href="./Projects/FIT-Project-FortisureFoodFront/index.php" class='example2-grid'>
     <div>
             <img src='./View/Public/Images/fff.PNG' class="examples-image">
             <p class = "examples-title">Fortisure Food Front</p>
@@ -34,7 +34,7 @@
     </div>
     </a>
 
-    <a href="" class='example3-grid'>
+    <a href="./Projects/Project2/test.php" class='example3-grid'>
     <div>
             <img src='./View/Public/Images/fb.PNG' class="examples-image">
             <p class = "examples-title">Flappy Bird</p>
