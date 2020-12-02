@@ -12,7 +12,7 @@
 
         <div class="form-message">
             <h2>Sign Up</h2>
-            <p>Please fill this form to create an account.</p>
+            <p>Please fill out this form to create an account.</p>
         </div>
 
         <div class="form-content">

@@ -14,6 +14,8 @@
 
     <h1 class="project-header"> My Projects</h1>
 
+    <p class="project-github"> Check me out on Github! Or browse some of my projects below.</p>
+
     <a href="" class='example1-grid'>
     <div >
             <img src='./View/Public/Images/reeses_pieces.png' class="examples-image">
@@ -40,10 +42,6 @@
             </button>
     </div>
     </a>
-
-
-
-<p class="project-github"> Check Me Out On Github!</p>
 
 </div>
 
