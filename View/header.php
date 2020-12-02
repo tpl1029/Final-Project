@@ -7,10 +7,7 @@ if(isset($_POST['logoutClick']))
     session_unset();
     session_destroy();
     $_POST = array(); 
-
 }
-    
-
 
 ?>
 
@@ -58,15 +55,14 @@ if(isset($_POST['logoutClick']))
 
                 <div class = "projects">
                     <a href="./index2.php"> <span class="projects-text">My Projects </span></a>
-                </div>
-                
+                </div>                
 
                 <div class = "login">
-                    <a href="./login.php" style="display:visible" id="logintext"> <span class="login-text" style="display:block" id="login" >Login</span></a>
+                    <a href="./login.php" style="display:visible" id="logintext"> <span class="login-text" style="display:visible" id="login" >Login</span></a>
                 </div>
                                 
                 <form method="post" action="" class = "logout">
-                    <button style="display:none" id="logouttext" name="logoutClick" type="submit"> <span class="login-text" style="display:none" id="logout">Logout</span></button>
+                    <button href="" style="display:none" id="logouttext" name="logoutClick" type="submit" class="btn btn-success"> <span style="display:none" id="logout" class="logout-text">Logout</span></button>
                 </form>
 
             </div>
@@ -89,8 +85,8 @@ if(isset($_POST['logoutClick']))
         echo " <script>
             document.getElementById('logout').style.display = 'none';     
             document.getElementById('logouttext').style.display = 'none';
-            document.getElementById('login').style.display = 'block';
-            document.getElementById('logintext').style.display = 'block';                     
+            document.getElementById('login').style.display = 'visible';
+            document.getElementById('logintext').style.display = 'visible';                     
         </script>";
         
     }

@@ -68,17 +68,29 @@
             text-align: center;
         }
 
-        .logout{
-            grid-column: 4;
-            grid-row: 1;
-            margin-top: auto;        
-            text-align: center;
-        }
-
         .login>a {
             color: black;
             border-top: 1px solid gray ;
             
+        }
+
+        .logout{
+            grid-column: 4;
+            grid-row: 1;
+            margin-top: auto;        
+            text-align: center;            
+        }
+
+        .logout>button{
+            height: 30px;
+            width: auto;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .logout-text{
+            font-size: 15px;            
+            margin-top: -5px;
         }
 
         .nav-buttons{
