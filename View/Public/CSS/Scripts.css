@@ -68,6 +68,13 @@
             text-align: center;
         }
 
+        .logout{
+            grid-column: 4;
+            grid-row: 1;
+            margin-top: auto;        
+            text-align: center;
+        }
+
         .login>a {
             color: black;
             border-top: 1px solid gray ;

@@ -6,7 +6,7 @@ $username_err = $password_err = "";
 $welcome = "";
 
 // Initialize the session
-session_start();
+// session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 // if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -48,13 +48,18 @@ if(isset($_POST["login"])){
         $login = new Login($db);
         $login->loginUser($userData);
 
-        if($_SESSION["loggedin"] = true && isset ($_SESSION["username"])) 
-        {   
+        if($_SESSION["loggedin"] == true) 
+        {              
             $welcome = "Hello" . " " .  $username . "!";
 
-            echo "          
-                <script> history.pushState({}, '', ''); </script>";           
-
+            echo"
+                <script> 
+                history.pushState({}, '', ''); 
+                document.getElementById('logout').style.display = 'block';     
+                document.getElementById('logouttext').style.display = 'block';
+                document.getElementById('login').style.display = 'none';
+                document.getElementById('logintext').style.display = 'none';</script>
+                ";
               }
 
         else
@@ -67,6 +72,5 @@ if(isset($_POST["login"])){
  else {
     echo "<p>There was a problem</p>";
     }
-
 
 ?>

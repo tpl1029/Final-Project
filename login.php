@@ -35,7 +35,7 @@
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login" name="login" id="login">
+                <input type="submit" class="btn btn-primary" value="Login" name="login" id="login" >
                 <br> <span class="help-block"><?php echo $welcome; ?></span>
             </div>
             <p>Don't have an account? <a href="./register.php">Sign up now</a>.</p>

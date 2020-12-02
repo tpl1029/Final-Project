@@ -32,6 +32,7 @@ class Login {
             
             else{
                 // Display an error message if username doesn't exist
+                $_SESSION["loggedin"] = false;
                 $username_err = " That account was not found";
                 }
                 
