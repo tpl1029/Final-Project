@@ -35,6 +35,8 @@
                     <h1>Thomas Lewis</h1>
                 </div>
 
+                <p id="message" class="login-message"> </p>
+
                 <div class = "home">
                     <a href="./index.php"> <span class="home-text">Home </span></a>
                 </div>
