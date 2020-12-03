@@ -27,7 +27,7 @@
         if($responseKeys["success"]) {
             header("Location:../contact.php");
                 echo ' <script>
-                document.getElementById("message").innerHTML = Thanks for contacting me!
+                document.getElementById("message").innerHTML = "Thanks for contacting me!";
                 </script>
                 ';
         } else {
