@@ -12,14 +12,25 @@ class Login {
             $password = $data ["password"];
 
             // Prepare a select statement
-            $query = "SELECT username, password FROM users WHERE username = '$userName' AND password = '$password'";
+            // $query = "SELECT username FROM users WHERE username = '$userName' ";
 
-            $results = $this->conn->prepare($query);
+            // $results = $this->conn->prepare($query);
+            
+            // $results->execute();
+
+
+
+            //$password = password_hash($password, PASSWORD_DEFAULT);
+
+            $hashed_query = "SELECT password FROM users WHERE username = '$userName' ";
+
+            $results = $this->conn->prepare($hashed_query);
             
             $results->execute();
-                
+                       
+            $row = $results->fetch(PDO::FETCH_ASSOC);
     
-            if($results->rowCount() == 1){
+            if($results->rowCount() == 1 && password_verify($password, $row['password'])){
                 // session_start();
                             
                 // Store data in session variables
