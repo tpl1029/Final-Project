@@ -1,0 +1,280 @@
+/* General Code */
+    .page-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        background-image: url("../Images/background4.png");
+        background-size: cover;
+    }
+
+    /* Header */
+        .header-grid{
+            grid-column: 1;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: auto 100px 100px 100px 100px;
+            grid-template-rows: auto auto;
+            border-bottom: 1px solid gray ;
+        }
+
+        .title{
+            grid-column: 1;
+            grid-row: 1;        
+        }
+
+        .title>h1{
+            font-size: x-large;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 20px;
+        }
+
+        .login-message{
+            grid-column: 1;
+            grid-row: 2;
+        }
+    /* Header */
+
+    /* Navbar */
+        .home{
+            grid-column: 2;
+            grid-row: 1;
+            margin-top: auto;
+            
+        }
+
+        .home-text {
+            color: black;
+            border-top: 1px solid gray ;
+        }
+
+        .projects{
+            grid-column: 3;
+            grid-row: 1;
+            margin-top: auto;        
+            text-align: center;
+        }
+
+        .projects>a {
+            color: black;
+            border-top: 1px solid gray ;
+            
+        }
+
+        .login{
+            grid-column: 4;
+            grid-row: 1;
+            margin-top: auto;        
+            text-align: center;
+        }
+
+        .login>a {
+            color: black;
+            border-top: 1px solid gray ;
+            
+        }
+
+        .logout{
+            grid-column: 4;
+            grid-row: 1;
+            margin-top: auto;        
+            text-align: center;            
+        }
+
+        .logout>button{
+            height: 30px;
+            width: auto;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .logout-text{
+            font-size: 15px;            
+            margin-top: -5px;
+        }
+
+        .nav-buttons{
+            border-top: 1px solid blue ;
+            color: blue;
+        }
+
+    /* Navbar */
+
+    /* Footer */
+        .footer{
+            grid-column: 1;
+            grid-row: 3;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            border-top: 1px solid gray ;
+        }
+
+        .footer>a{
+            grid-column: 1;
+            grid-row: 1;        
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 150px;
+        }
+
+    /* Footer */
+
+/* General Code */
+
+/* Main Page */
+
+    .main-page{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .main-content{
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto auto auto auto;
+    }
+
+    .main-image{
+        grid-column: 2;
+        grid-row: 1;   
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .main-image>img{
+        width: 250px;
+        height: 250px;
+    }
+
+/* Main Page */
+
+/* Projects */
+
+    .project-grid{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: auto 277px 277px 277px auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 100px;
+        
+    }
+
+    .project-header{
+        grid-column: 1;
+        grid-row: 1;
+        padding-bottom: 50px;
+    }
+
+    .project-github{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .project-grid>a{
+        color: black;
+    }
+
+    .example1-grid {
+        grid-row: 3;
+        grid-column: 2;        
+        display: grid;        
+        grid-template-columns: 275px;        
+        grid-template-rows: auto auto auto;            
+        /* border: 1px solid black;  */
+        background-color: transparent;   
+        text-align: center;           
+      }
+
+      .example1-grid:hover{
+        transform: scale(1.15);
+      }
+
+      .example2-grid {
+        grid-row: 3;
+        grid-column: 3;        
+        display: grid;        
+        grid-template-columns: 275px;        
+        grid-template-rows: auto auto auto;            
+        /* border: 1px solid black; */
+        background-color: transparent;
+        text-align: center;          
+      }
+
+      .example2-grid:hover{
+        transform: scale(1.15);
+      }
+      
+      .example3-grid {
+        grid-row: 3;
+        grid-column: 4;        
+        display: grid;        
+        grid-template-columns: 275px;        
+        grid-template-rows: auto auto auto;            
+        /* border: 1px solid black;  */
+        background-color: transparent;
+        text-align: center;          
+      }
+
+      .example3-grid:hover{
+          transform: scale(1.15);
+      }
+
+      .examples-image{
+          grid-column: 1;
+          grid-row: 1;
+          width: 277px;
+          height: 190px;          
+      }
+
+      .examples-title{
+        grid-column: 1;
+        grid-row: 2;
+        font-weight: bold;
+    }
+
+    .examples-description{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+    }
+
+
+/* Projects */
+
+/* Register */
+
+    .form-grid {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .form-message {
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto;
+        padding-top: 10px;
+        
+    }
+
+    .form-content {
+        grid-column: 1;
+        grid-row: 2;
+        width: 500px;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+/* Register */

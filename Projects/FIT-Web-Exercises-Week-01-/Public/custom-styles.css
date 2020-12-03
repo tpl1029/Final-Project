@@ -1,0 +1,129 @@
+html,
+body {
+    height: auto;
+    background-color: #AB3333;
+}
+
+.page-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    
+}
+
+.nav-background {
+    background-image: url("./Images/reeses_pieces.png");
+    background-size: cover;
+}
+
+.nav-title {
+    margin-left: 0px;
+        font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.nav-grid {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr;
+    grid-template-rows: 1;
+    position: sticky;
+    top: 0
+}
+
+.nav-crown {
+    margin-left: 80px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(320deg);
+    position: absolute; 
+    top: -8px; 
+    
+    }
+
+/* .nav-box { 
+    width: 100px;
+    border: 15px solid white;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    opacity: 25%;
+    height: 20px;
+} */
+
+.nav-buttons {
+    color:black;
+    background-color: #BB1D1D;
+}
+
+
+.our-info-grid{
+    font-size: large;
+    font-weight: bold;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto ;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    
+}
+ .body-welcome{ 
+    grid-column: 1;
+    padding: 20px 0px 0px 0px; 
+        
+}
+
+ .body-product{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    border-left: 1px solid gray;
+    padding: 20px 5% 60px 5%;
+    height: 100%;
+    font-weight: bold; 
+}
+/*.body-product {
+    /* margin-left: 1400px; */
+    /* padding-top: 0px; */
+    /* padding-left: 433px; */
+    /* font-weight: bold; */
+    /* position: absolute; */
+    /* top: 120px; 
+    } */
+
+
+.body-news {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    border-left: 1px solid gray;
+    padding: 0px 5% 0px 5%;
+    height: 100%;
+    font-weight: bold; 
+}
+
+/* .vl{ 
+     border-left: 6px solid black; 
+    height: 329px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 118px;
+  
+
+} */
+
+.footer {
+    font-weight: bold;
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid gray;
+}
