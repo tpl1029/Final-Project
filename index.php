@@ -36,7 +36,7 @@
     </div>
 
     <div class="main-image">
-    <img src = "./View/Public/Images/milk.jpg" >
+    <img src = "./View/Public/Images/Thomas.jpg" >
     </div>
 
 </div>
