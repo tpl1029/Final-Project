@@ -1,11 +1,13 @@
 <?php
-$welcome = $username = $password = $confirm_password = "";
+$captcha = $welcome = $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']) && isset($_POST['g-recaptcha-response'])){
     require './Model/query-newuser.php';
-    
+
+    $captcha=$_POST['g-recaptcha-response'];
+
     // Validate username
     if(empty(trim($_POST["username"])) ){
         $username_err = "Please enter a username.";
@@ -19,8 +21,21 @@ if(isset($_POST['submit'])){
     elseif(trim($_POST["password"])!=trim($_POST["confirm_password"]) ){
         $confirm_password_err = "Passwords did not match.";
     }
+
+    elseif(!$captcha){          
+        $welcome = "Please check the CAPTCHA!";
+        
+      }
     
     else{
+        $secretKey = "6Lc7GfcZAAAAAHWpadMMNcGCS5Hat6Gl9RU__QfY";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        // post request to server
+        $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+        $response = file_get_contents($url);
+        $responseKeys = json_decode($response,true);
+        // should return JSON with success as true
+        if($responseKeys["success"]) {
         $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
         $username = trim(htmlentities($POST["username"]));
         $password = trim(htmlentities($POST["password"]));
@@ -41,14 +56,10 @@ if(isset($_POST['submit'])){
             $username_err = "This username is already taken.";
         }      
         
-        
+     }
     }
 }
 
-else{
-    echo
-    "<p>There was a problem</p>";
-}
 
 
 

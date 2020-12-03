@@ -11,7 +11,7 @@
 
         if(!$captcha){          
           $message = "Please check the CAPTCHA!";
-          exit;
+          
         } else{
           $secretKey = "6Lc7GfcZAAAAAHWpadMMNcGCS5Hat6Gl9RU__QfY";
           $ip = $_SERVER['REMOTE_ADDR'];

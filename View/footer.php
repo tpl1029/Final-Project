@@ -42,23 +42,8 @@
 
 </script>
 
-<!-- <?php
-                   
-    // if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) 
-    // {   
-    //     echo " <script>
-    //         document.getElementById('captcha').style.display = 'none';                     
-    //     </script>
-    //         ";
-        
-    // }
-    // else {
-        
-    //     echo " <script>
-    //         document.getElementById('captcha').style.display = 'visible';                     
-    //     </script>";
-        
-    // }
 
-?> -->
-
+<script>
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+</script>

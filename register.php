@@ -33,8 +33,9 @@
                     <span class="help-block"><?php echo $confirm_password_err; ?></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">
-                    <input type="reset" class="btn btn-default" value="Reset">
+                <div class="g-recaptcha" data-sitekey="6Lc7GfcZAAAAAI0r5pEroYDjS_3YatQ2M8f8qZZA" id="captcha" style="display:visible"></div>
+                <br>
+                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">                    
                     <br> <span class="help-block"><?php echo $welcome; ?></span>
                 </div>
                 <p> Already have an account? <a href="login.php">Login here</a>.</p>
