@@ -1,0 +1,379 @@
+/* General Code */
+
+.page-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    background-image: linear-gradient(#F5F5F5, #E2D3CC);
+}
+
+/* Header */
+
+    .header-grid {
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 325px auto;
+        grid-template-rows: auto;
+    }
+
+
+
+    .header-logo {
+        grid-row: 1;
+        grid-column: 1;
+        border-right: 1px solid black;   
+    }
+
+    .header-image {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto 150px;
+        background-image: url("../Images/header4.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+    } 
+
+
+    .header-location {
+        grid-row: 1;
+        grid-column: 1;
+        grid-template-columns: 100px;
+        font-weight: bold;
+        
+    }
+
+    .header-button {
+        grid-row: 2;
+        grid-column: 3;
+        margin-right: 5px;
+    }
+
+/* Header */
+
+/* Navbar */
+    .navbar-grid {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-columns: 250px 250px 250px 250px auto;
+        grid-template-rows: 1;
+        position: sticky;
+        padding-top: 5px;
+        padding-left: 5px;
+        column-gap: 10px;
+        border-bottom: 1px solid gray ;
+        }
+
+    .nav-button0{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .nav-button1{
+        grid-row: 1;
+        grid-column: 2;
+        
+    }
+
+    .nav-button2 {
+        grid-row: 1;
+        grid-column: 3;
+        
+    }
+
+    .nav-button3 {
+        grid-row: 1;
+        grid-column: 4;
+        
+    }
+
+/* Navbar */
+
+/* Footer */
+
+    .footer-grid {
+        display: grid;
+        grid-column: 1;
+        grid-row: 5;
+        grid-template-columns: 275px 250px auto;
+        grid-template-rows: 1;
+        border-top: 1px solid gray ;
+        margin-top: 10px;
+    }
+
+    .footer-text {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 50px;
+    margin-left: 5px;
+    }
+
+    .footer-button {
+        grid-row: 1;
+        grid-column: 2;
+        margin-top: 10px;
+        margin-bottom: auto;
+        margin-left: 500px;
+        width: 150px;
+    }
+
+/* Footer */
+
+
+/* General Code */
+
+/* Home Page */
+/* Welcome Info */
+    .welcome-grid{
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+        grid-template-columns: 400px auto;
+        grid-template-rows: auto;
+        
+    }
+
+    .welcome-grid>img{
+        height: 500 px;
+        width: 1000px;
+        padding-top: 50px;
+        padding-left: 475px
+        ;
+    }
+
+    .welcome-text{
+        grid-row: 1;
+        grid-column: 1;
+        padding-top: 50px;
+        margin-left: 5px;
+    }
+
+    .welcome-image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+/* Welcome Info */
+
+/* Products*/
+/* Top Sellers */
+    .trending-container-grid {
+        grid-row: 4;
+        grid-column: 1;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto auto auto auto;
+            grid-template-columns: 200px 200px 200px auto;
+        -ms-grid-rows: auto auto;
+            grid-template-rows: 75px 225px;
+            column-gap: 5px;
+    }
+    
+    .trending-container-grid h1 {
+        -ms-grid-column: 1;
+        grid-column: 1;  
+        grid-row: 1;  
+        font-weight: normal;
+        font-size: 36px;
+        margin-left: 5px;
+    }      
+    
+    .product-card-grid {
+        grid-row: 2;
+        grid-column: 1;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 193px;
+        -ms-grid-rows:  164px 50px 40px;
+            grid-template-rows: auto auto auto;            
+        border: 1px solid black;
+        
+        
+    }
+    
+    .product-card-grid:nth-child(1) {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        margin-left: 5px;
+    }
+    
+    .product-card-grid:nth-child(2) {
+        -ms-grid-column: 2;
+        grid-column: 2;
+        margin-left: 5px;
+    }
+    
+    .product-card-grid:nth-child(3) {
+        -ms-grid-column: 3;
+        grid-column: 3; ;
+        margin-left: 5px}
+
+        .product-card-grid img {
+            grid-row: 1;
+            height: 125px;
+            width: 125px;
+            margin-left: 35px;       
+        }
+        
+        .product-card-desc {
+            grid-row: 2;               
+            margin-top: 5px;
+            margin-left: 45px;
+        }
+        
+/* Top Sellers */
+
+/* Deal */
+
+    .deal-card {
+        grid-row: 1/2;
+        grid-column: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  20px 200px 20px ;
+        width: 528px;
+        height: 250px;
+        box-shadow: 5px 4px 10px 0px rgba(0,0,0,0,45);
+        background-color: white;    
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 258px;
+        border: 1px solid black;
+    }
+    .deal-header {
+        grid-row: 1;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 175px;
+    }
+    .deal-card img {
+        height: 150px;
+        width: 200px;
+        grid-row: 2;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+
+    .deal-details {
+        grid-row: 3;
+        padding-left: 110px;
+    }
+
+/* Deal */
+
+/* Products */
+
+/* Home Page */
+
+/* Rewards Page  */
+
+/* Rewards Info */
+    .info-grid{
+        grid-row: 3;
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 600px auto;
+        grid-template-rows: 200px 200px 200px 200px;
+        border-bottom: 1px solid gray;
+    }
+
+
+    .info-header {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 5px;   
+            
+    }
+
+    .info-bronze {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 50px;
+        margin-left: 10px;
+    }
+
+    .info-silver {
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 50px;
+        margin-left: 10px;
+    }
+
+    .info-gold {
+        grid-column: 1;
+        grid-row: 4;
+        padding-top: 50px;
+        margin-left: 10px;
+    }
+/* Rewards Info */
+
+/* Rewards Card Pics */
+    .card-bronze {
+        grid-column: 2;
+        grid-row: 2;
+        width: 300px;
+        height: 150px;
+        margin-left: 1000px;
+        margin-top: -70px;
+        border-radius: 10%; /* I chose the border radius effect because I thought it was neat that you could change the way an image looked */
+        
+    }
+
+    .card-silver {
+        grid-column: 2;
+        grid-row: 3;
+        width: 300px;
+        height: 150px;
+        margin-left: 1000px;
+        margin-top: -70px;
+        border-radius: 10%;
+    }
+
+    .card-gold {
+        grid-column: 2;
+        grid-row: 4;
+        width: 300px;
+        height: 150px;
+        margin-left: 1000px;
+        margin-top: -70px;
+        border-radius: 10%;
+    }
+
+/* Rewards Card Pics */
+
+/* Form */
+    .form-grid {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .form-message {
+        grid-column: 1/2;
+        grid-row: 1;
+        margin-left: 700px;
+        padding-top: 10px;
+        
+    }
+
+    .form-content {
+        grid-column: 1;
+        grid-row: 2;
+        width: 500px;
+        margin-left: 700px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+/* Form */
+
+/* Rewards Page  */
+
+/* Login Page */
