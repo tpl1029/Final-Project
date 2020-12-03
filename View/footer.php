@@ -1,6 +1,6 @@
 <div class="footer">
                 
-                <a href="mailto:tpl1029@gmail.com" class="btn btn-success">Contact Me!</a> 
+                <a href="./contact.php" class="btn btn-success">Contact Me!</a> 
             </div>
     </div>
 
