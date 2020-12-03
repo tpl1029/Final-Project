@@ -14,7 +14,7 @@
 
     <h1 class="project-header"> My Projects</h1>
 
-    <p class="project-github"> Check me out on Github! Or browse some of my projects below.</p>
+    <p class="project-github"> Check me out on <a href="https://github.com/tpl1029"> Github!</a> Or browse some of my projects below.</p>
 
     <a href="./Projects/FIT-Web-Exercises-Week-01-/index.html" class='example1-grid'>
     <div >
