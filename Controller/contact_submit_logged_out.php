@@ -1,5 +1,5 @@
 <?php   
-        $message = " ";
+        $message = "";
         $name;$email;$comment;$captcha;
 
         if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['comments']) && isset($_POST['g-recaptcha-response'])){
@@ -7,10 +7,10 @@
             $email=$_POST['email'];
             $comment=$_POST['comments'];
             $captcha=$_POST['g-recaptcha-response'];
+            
 
-        if(!$captcha){
-          
-          echo '<h2>Please check the captcha form.</h2>';
+        if(!$captcha){          
+          $message = "Please check the CAPTCHA!";
           exit;
         } else{
           $secretKey = "6Lc7GfcZAAAAAHWpadMMNcGCS5Hat6Gl9RU__QfY";
@@ -21,8 +21,7 @@
           $responseKeys = json_decode($response,true);
           // should return JSON with success as true
           if($responseKeys["success"]) {
-              
-              $message = "Thank you" . " " . $name . " " . "for contacting me!";
+              $message = "Thank you" . " " . $name . " " . "for contacting me!";                  
                   
           } else {
                   

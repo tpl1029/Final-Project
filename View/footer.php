@@ -1,6 +1,6 @@
 <div class="footer">
                 
-                <a href="./contact.php" class="btn btn-success">Contact Me!</a> 
+                <a href="./contact_button.php" class="btn btn-success">Contact Me!</a> 
             </div>
     </div>
 
@@ -41,4 +41,24 @@
     }
 
 </script>
+
+<!-- <?php
+                   
+    // if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) 
+    // {   
+    //     echo " <script>
+    //         document.getElementById('captcha').style.display = 'none';                     
+    //     </script>
+    //         ";
+        
+    // }
+    // else {
+        
+    //     echo " <script>
+    //         document.getElementById('captcha').style.display = 'visible';                     
+    //     </script>";
+        
+    // }
+
+?> -->
 

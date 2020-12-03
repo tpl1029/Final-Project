@@ -69,14 +69,14 @@ if(isset($_POST['logoutClick']))
             </div>
 
 <?php
-                
+                   
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) 
     {   
         echo " <script>
             document.getElementById('logout').style.display = 'block';     
             document.getElementById('logouttext').style.display = 'block';
             document.getElementById('login').style.display = 'none';
-            document.getElementById('logintext').style.display = 'none';                     
+            document.getElementById('logintext').style.display = 'none';                             
         </script>
             ";
         
@@ -87,7 +87,7 @@ if(isset($_POST['logoutClick']))
             document.getElementById('logout').style.display = 'none';     
             document.getElementById('logouttext').style.display = 'none';
             document.getElementById('login').style.display = 'visible';
-            document.getElementById('logintext').style.display = 'visible';                     
+            document.getElementById('logintext').style.display = 'visible';                               
         </script>";
         
     }

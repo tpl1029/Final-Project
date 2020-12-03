@@ -69,8 +69,6 @@ if(isset($_POST["login"])){
     }
 }
 
- else {
-    echo "<p>There was a problem</p>";
-    }
+
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
-include './View/header.php';
-include './Controller/contact_submit.php';
+
+include './Controller/contact_submit_logged_in.php';
 
 ?>  
 <div class="form-grid">
@@ -19,8 +19,6 @@ include './Controller/contact_submit.php';
             <input type="text" class="form-control"  name="email" id="email">
             <label>Comments:</label><br>
             <input type="textarea" class="form-control" name="comments" id="comments">
-            <br>
-            <div class="g-recaptcha" data-sitekey="6Lc7GfcZAAAAAI0r5pEroYDjS_3YatQ2M8f8qZZA" id="captcha" style="display:visible"></div>
             <br>
             <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">
             <br> <span class="help-block"><?php echo $message; ?></span>

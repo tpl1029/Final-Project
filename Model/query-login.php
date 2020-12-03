@@ -17,7 +17,7 @@ class Login {
             $results = $this->conn->prepare($query);
             
             $results->execute();
-            echo $results->rowCount();      
+                
     
             if($results->rowCount() == 1){
                 // session_start();
