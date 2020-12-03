@@ -1,5 +1,5 @@
 <?php
-$username = $password = $confirm_password = "";
+$welcome = $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
@@ -34,13 +34,7 @@ if(isset($_POST['submit'])){
 
         if($user->checkUser($userData))
         {
-            echo "
-                <script>       
-                    
-                alert('Thank you {$username} for signing up.');
-                history.pushState({}, '', '');
-                
-                </script>";
+           $welcome = "Thank you" . " " . $username . " " . "for signing up!";
         }
         else
         {
